@@ -3,7 +3,7 @@ import math
 import random
 pointlist = [(76,89),(760,684)]
 
-def CrossProduct(Point1,Point2):
+def ExampleCrossProduct(Point1,Point2):
     if (Point1[0]*Point2[1])-(Point1[1]*Point2[0]) > 0:
         return "Left"
     elif (Point1[0]*Point2[1])-(Point1[1]*Point2[0]) == 0:
@@ -30,8 +30,7 @@ def ShortestPointtoLineDistance():
 
 #find shortest dist each time
 
-
-print(CrossProduct(pointlist[0],pointlist[1]))
+print(ExampleCrossProduct(pointlist[0],pointlist[1]))
 
 
 #Sweep Line (Full Knowledge)

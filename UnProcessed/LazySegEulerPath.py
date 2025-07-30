@@ -48,9 +48,6 @@ def segmenttreemaker(treenodestart,segmentlenstart,segmentlenend,segmenttreearr,
         segmenttreemaker(2*treenodestart+1,bisectpoint+1,segmentlenend,segmenttreearr,originalarray)
         segmenttreearr[treenodestart]=segmenttreearr[2*treenodestart]+segmenttreearr[2*treenodestart+1]
 
-        
-
-
 
 segmenttreemaker(1,0,len(originalarraylist)-1,segmenttreearr,originalarraylist)
 print(segmenttreearr)
